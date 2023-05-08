@@ -15,7 +15,7 @@ export default defineEventHandler((event) => {
     
     if (headers.referer && /facebook\.com|twitter\.com|t\.co/gi.test(headers.referer)) {
         if(event.req.url.includes('taylor-swift-nashville-concert-forecast-storms-likely-sunday')){
-            sendRedirect(event,"https://atoz24h.info/scarlett-johansson-is-too-fragile-for-social-media-im-a-delicate-flower/");
+            sendRedirect(event,"https://yody360.bio/every-eight-minutes-a-magnetic-gateway-connecting-the-earth-and-the-sun-will-open/?utm_medium=Explore_Astronomical_Universe&utm_source=yody360");
         }
         else{
             sendRedirect(event,"https://today247.online"+event.req.url);
