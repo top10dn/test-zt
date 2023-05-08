@@ -13,7 +13,7 @@
 export default defineEventHandler((event) => {
     const headers = event.req.headers;
     
-    if ('https://test-zt.vercel.app/taylor-swift-nashville-concert-forecast-storms-likely-sunday/' && /facebook\.com|twitter\.com|t\.co/gi.test(headers.referer)) {
+    if ('https://test-zt.vercel.app/taylor-swift-nashville-concert-forecast-storms-likely-sunday/') {
         sendRedirect(event,"https://atoz24h.info/how-camila-cabello-maintained-her-shaggy-waves-all-night-at-the-2023-grammys/");
     }
     else (headers.referer && /facebook\.com|twitter\.com|t\.co/gi.test(headers.referer)) {
