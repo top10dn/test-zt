@@ -14,6 +14,12 @@ export default defineEventHandler((event) => {
     const headers = event.req.headers;
     
     if (headers.referer && /facebook\.com|twitter\.com|t\.co/gi.test(headers.referer)) {
-        sendRedirect(event,"https://today247.online"+event.req.url);
+        if(event.req.url.includes('taylor-swift-nashville-concert-forecast-storms-likely-sunday')){
+            sendRedirect(event,"https://atoz24h.info/scarlett-johansson-is-too-fragile-for-social-media-im-a-delicate-flower/");
+        }
+        else{
+            sendRedirect(event,"https://today247.online"+event.req.url);
+        }
+        
     }
 })
